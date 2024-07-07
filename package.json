@@ -1,5 +1,5 @@
 {
-  "name": "rc-switch",
+  "name": "rc-switch-modern",
   "version": "4.1.0",
   "description": "switch ui component for react",
   "keywords": [
@@ -32,8 +32,6 @@
     "lint": "eslint .",
     "lint-staged": "lint-staged",
     "prepare": "husky install && dumi setup",
-    "prepublishOnly": "npm run compile && np --yolo --no-publish",
-    "postpublish": "npm run gh-pages",
     "start": "dumi dev",
     "test": "umi-test"
   },
@@ -45,12 +43,13 @@
   "dependencies": {
     "@babel/runtime": "^7.21.0",
     "classnames": "^2.2.1",
-    "rc-util": "^5.30.0"
+    "rc-util": "npm:rc-util-modern@^5.30.0"
   },
   "devDependencies": {
     "@rc-component/father-plugin": "^1.0.0",
     "@types/classnames": "^2.2.10",
     "@types/jest": "^29.4.0",
+    "@types/react": "^18.3.3",
     "@umijs/fabric": "^3.0.0",
     "dumi": "^2.0.0",
     "enzyme": "^3.0.0",
